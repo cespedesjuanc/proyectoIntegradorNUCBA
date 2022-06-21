@@ -13,6 +13,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- NAVBAR-->
@@ -21,7 +29,7 @@
         <a id="a_img" class="navbar-brand" href="#">
           <img
             id="img_logo_car"
-            src="/img/logo_car.jpg"
+            src="/img/logo_car_2.jpg"
             alt="logo_car"
             class="d-inline-block align-text-center"
           />
@@ -43,20 +51,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                id="nav_links"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Amazing Cars </a>
+              <a id="nav_links" class="nav-link active" href="#gallery"
+                >Amazing Cars
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
+              <a id="nav_links" class="nav-link active" href="#contacts"
+                >Contact Us</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Register</a>
+              <a id="nav_links" class="nav-link active" href="#">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active btn btn-outline-danger" href="#"
-                >Sign in</a
+              <a
+                id="nav_links"
+                class="nav-link active btn btn-outline-danger"
+                href="#"
+                >Log in</a
               >
             </li>
           </ul>
@@ -78,22 +99,71 @@
       <div class="capa"></div>
     </main>
 
-    <!-- CAROUSEL-->
-    <div id="mainSlider" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <img src="/img/car_01.jpg" class="d-block w-100" alt="car_01" />
-        </div>
-        <div class="carousel-item active">
-          <img src="/img/car_02.jpg" class="d-block w-100" alt="car_02" />
-        </div>
-        <div class="carousel-item">
-          <img src="/img/car_03.jpg" class="d-block w-100" alt="car_03" />
+    <!-- CAROUSEL -->
+    <section id="gallery">
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="/img/car_01.jpg" class="d-block w-100" alt="car_01" />
+          </div>
+          <div class="carousel-item active">
+            <img src="/img/car_02.jpg" class="d-block w-100" alt="car_02" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/car_03.jpg" class="d-block w-100" alt="car_03" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/car_04.jpg" class="d-block w-100" alt="car_04" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- CAROUSEL-->
 
+    <!-- Contact Us -->
+    <section id="contacts">
+      <div class="contact-header">
+        <h2>Let's get in touch!</h2>
+        <p>and let's create amazing things!</p>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/amazing_cars/"
+          target="_blank"
+          class="btn_social_links"
+        >
+          <i class="fa-brands fa-facebook"></i> Amazing_cars
+        </a>
+
+        <a
+          href="https://twitter.com/amazing_cars"
+          target="_blank"
+          class="btn_social_links"
+        >
+          <i class="fa-brands fa-twitter"></i> Amazing_cars
+        </a>
+
+        <a
+          href="mailto:amazing_cars@gmail.com"
+          target="_blank"
+          class="btn_social_links"
+        >
+          <i class="fa-solid fa-at"></i> Send a mail
+        </a>
+
+        <a href="tel:11-1111-1111" target="_blank" class="btn_social_links">
+          <i class="fa-solid fa-mobile-screen-button"></i> Call us
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <i class="fa-solid fa-copyright"></i> Integrating Project created by
+        Juan Carlos Cespedes for Nucba, Camada 1917.
+      </p>
+    </footer>
+    <!-- Contact Us -->
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
   </body>
