@@ -69,9 +69,11 @@
                 >Contact Us</a
               >
             </li>
+            <!--
             <li class="nav-item">
               <a id="nav_links" class="nav-link active" href="#">Register</a>
             </li>
+            -->
             <li class="nav-item">
               <a
                 id="nav_links"
@@ -92,7 +94,9 @@
         <p>
           Classic cars, muscle cars, concept cars and all the car tuning here!
         </p>
-        <button id="btn-register" type="button">REGISTER</button>
+        <button class="btn-register-class" id="btn-register" type="button">
+          REGISTER
+        </button>
       </div>
 
       <video muted autoplay loop src="/media/sema_fondo.mkv"></video>
@@ -164,7 +168,86 @@
       </p>
     </footer>
     <!-- Contact Us -->
+
+    <!-- Modal Register -->
+
+    <section class="modalReg">
+      <div class="modal__container">
+        <form action="" method="post" id="form">
+          <div class="form">
+            <h1>Register</h1>
+            <div class="grupo">
+              <input
+                type="text"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Nickname</label>
+            </div>
+            <div class="grupo">
+              <input
+                type="email"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Email</label>
+            </div>
+
+            <div class="grupo">
+              <input
+                type="password"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Password</label>
+            </div>
+            <div class="grupo">
+              <input
+                type="password"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Repeat Password</label>
+            </div>
+            <div class="grupo">
+              <input
+                type="text"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Country</label>
+            </div>
+
+            <button class="modal__closeReg" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Modal Register -->
+
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
