@@ -303,7 +303,8 @@ footer p {
 
 form {
   background: #f5be09;
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 form h1 {
@@ -357,6 +358,12 @@ input {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+
+#closeModal {
+  text-align: end;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 /**** media query ****/
