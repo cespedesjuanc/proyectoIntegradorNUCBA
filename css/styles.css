@@ -246,6 +246,24 @@ footer p {
   --transition: transform 0.8s;
 }
 
+.modalLog {
+  z-index: 10001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s 0.9s;
+  --transform: translateY(-100vh);
+  --transition: transform 0.8s;
+}
+
 .modal__container {
   margin: auto;
   width: 90%;
@@ -268,6 +286,14 @@ footer p {
 }
 
 .modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+  --transform: translateY(0);
+  --transition: transform 0.8s 0.8s;
+}
+
+.modal--showLog {
   opacity: 1;
   pointer-events: unset;
   transition: opacity 0.6s;
@@ -308,6 +334,19 @@ input {
 }
 
 .modal__closeReg {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 25px;
+  cursor: pointer;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.modal__closeLog {
   display: block;
   width: 80%;
   margin: 10px auto;

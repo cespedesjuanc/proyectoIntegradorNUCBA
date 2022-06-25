@@ -69,15 +69,11 @@
                 >Contact Us</a
               >
             </li>
-            <!--
-            <li class="nav-item">
-              <a id="nav_links" class="nav-link active" href="#">Register</a>
-            </li>
-            -->
+
             <li class="nav-item">
               <a
                 id="nav_links"
-                class="nav-link active btn btn-outline-danger"
+                class="nav-link active btn btn-outline-danger btn-login-class"
                 href="#"
                 >Log in</a
               >
@@ -245,6 +241,46 @@
     </section>
 
     <!-- Modal Register -->
+
+    <!-- Modal Login -->
+    <section class="modalLog">
+      <div class="modal__container">
+        <form action="" method="post" id="form">
+          <div class="form">
+            <h1>Log in</h1>
+
+            <div class="grupo">
+              <input
+                type="email"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Email</label>
+            </div>
+
+            <div class="grupo">
+              <input
+                type="password"
+                name=""
+                id="name"
+                autocomplete="off"
+                size="30"
+                required
+              />
+
+              <label for="">Password</label>
+            </div>
+
+            <button class="modal__closeLog" type="submit">Sing in</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Modal Login -->
 
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
